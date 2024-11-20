@@ -259,7 +259,7 @@ export default function Portfolio() {
                   applications and am always eager to learn new technologies to
                   enhance my skills. Currently, I am advancing my knowledge
                   through a Full Stack Development course at Saylani Mass IT
-                  Training, where I'm exploring back-end development and
+                  Training, where I&apos;m exploring back-end development and
                   expanding my proficiency in the MERN stack.
                 </motion.p>
                 <motion.p
