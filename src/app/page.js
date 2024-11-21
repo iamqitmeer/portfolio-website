@@ -330,104 +330,268 @@ export default function Portfolio() {
                 Projects
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-                {[
-                  {
-                    title: "E-commerce Website",
-                    description:
-                      "A full-featured online store with admin controls for product management.",
-                    image: "https://ibb.co/1bJ2hZw",
-                    tools: "React.js, Firebase, Tailwind CSS, NextUI",
-                    githubLink:
-                      "https://github.com/iamqitmeer/SMIT-0002-WMA-Batch-11-2024-Training/tree/main/SMIT%20Projects/final_frontend_ecommerce",
-                    liveDemo: "https://ecommerce-react-two-alpha.vercel.app/",
-                  },
-                  {
-                    title: "Financial Management Application",
-                    description:
-                      "Manage expenses, track income, calculate taxes, and plan budgets effectively.",
-                    image: "/placeholder.svg?height=200&width=300",
-                    tools: "React, CSS, Redux & Firebase",
-                    githubLink:
-                      "https://github.com/iamqitmeer/finance-management",
-                    liveDemo: "https://finance-management-qitmeer.vercel.app",
-                  },
-                  {
-                    title: "Multiple Task Manager",
-                    description:
-                      "A Functional Multiple Task Manager that organizes tasks by days, allowing users to add and manage separate to-dos for each day of the week.",
-                    image: "https://ibb.co/f8mksTr",
-                    tools: "React.js, Tailwind CSS",
-                    githubLink:
-                      "https://github.com/iamqitmeer/multiple-task-manager",
-                    liveDemo: "https://multi-task-manager.vercel.app/",
-                  },
-                ].map((project, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
-                      <div className="relative overflow-hidden">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          width={300}
-                          height={200}
-                          className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <div className="space-x-4">
-                            <Button
-                              asChild
-                              variant="outline"
-                              className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://i.ibb.co/Vx7XrVB/main-screen.png"
+                        alt="Multiple Task Manager"
+                        width={300}
+                        height={200}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="space-x-4">
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://github.com/iamqitmeer/finance-management"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                              <a
-                                href={project.githubLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <Github className="mr-2 h-4 w-4" />
-                                Code
-                              </a>
-                            </Button>
-                            <Button
-                              asChild
-                              variant="outline"
-                              className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                              <Github className="mr-2 h-4 w-4" />
+                              Code
+                            </a>
+                          </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://finance-management-qitmeer.vercel.app"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                              <a
-                                href={project.liveDemo}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <ExternalLink className="mr-2 h-4 w-4" />
-                                Demo
-                              </a>
-                            </Button>
-                          </div>
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Demo
+                            </a>
+                          </Button>
                         </div>
                       </div>
-                      <CardHeader>
-                        <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
-                          {project.title}
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-                          {project.description}
-                        </p>
-                        <p className="text-zinc-500 dark:text-zinc-400 text-sm">
-                          <span className="font-semibold">Tools used:</span>{" "}
-                          {project.tools}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
+                        Financial Management Application{" "}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                        Manage expenses, track income, calculate taxes, and plan
+                        budgets effectively.
+                      </p>
+                      <p className="text-zinc-500 dark:text-zinc-400 text-sm">
+                        <span className="font-semibold">Tools used:</span>{" "}
+                        React, CSS, Redux & Firebase{" "}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://i.ibb.co/fQG0BMP/ecommerce.png"
+                        alt="Multiple Task Manager"
+                        width={300}
+                        height={200}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="space-x-4">
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://github.com/iamqitmeer/SMIT-0002-WMA-Batch-11-2024-Training/tree/main/SMIT%20Projects/final_frontend_ecommerce"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Github className="mr-2 h-4 w-4" />
+                              Code
+                            </a>
+                          </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://ecommerce-react-two-alpha.vercel.app/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Demo
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
+                        E-commerce Website{" "}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                        A full-featured online store with admin controls for
+                        product management.
+                      </p>
+                      <p className="text-zinc-500 dark:text-zinc-400 text-sm">
+                        <span className="font-semibold">Tools used:</span>{" "}
+                        React.js, Firebase, Tailwind CSS, NextUI{" "}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://i.ibb.co/tZyq91Y/multi-task-manager.png"
+                        alt="Multiple Task Manager"
+                        width={300}
+                        height={200}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="space-x-4">
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://github.com/iamqitmeer/multiple-task-manager"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Github className="mr-2 h-4 w-4" />
+                              Code
+                            </a>
+                          </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://multi-task-manager.vercel.app/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Demo
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
+                        Multiple Task Manager
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                        A Functional Multiple Task Manager that organizes tasks
+                        by days, allowing users to add and manage separate
+                        to-dos for each day of the week.
+                      </p>
+                      <p className="text-zinc-500 dark:text-zinc-400 text-sm">
+                        <span className="font-semibold">Tools used:</span>{" "}
+                        React.js, Tailwind CSS
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://i.ibb.co/cyxbkhb/weather.png"
+                        alt="Multiple Task Manager"
+                        width={300}
+                        height={200}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="space-x-4">
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://github.com/iamqitmeer/multiple-task-manager"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Github className="mr-2 h-4 w-4" />
+                              Code
+                            </a>
+                          </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://multi-task-manager.vercel.app/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Demo
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
+                        Todo List App
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                        A Functional Multiple Task Manager that organizes tasks
+                        by days, allowing users to add and manage separate
+                        to-dos for each day of the week.
+                      </p>
+                      <p className="text-zinc-500 dark:text-zinc-400 text-sm">
+                        <span className="font-semibold">Tools used:</span>{" "}
+                        React.js, Tailwind CSS
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               </div>
             </div>
           </motion.section>
