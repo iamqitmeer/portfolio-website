@@ -526,72 +526,7 @@ export default function Portfolio() {
                     </CardContent>
                   </Card>
                 </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                  viewport={{ once: true }}
-                >
-                  <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
-                    <div className="relative overflow-hidden">
-                      <Image
-                        src="https://i.ibb.co/cyxbkhb/weather.png"
-                        alt="Multiple Task Manager"
-                        width={300}
-                        height={200}
-                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <div className="space-x-4">
-                          <Button
-                            asChild
-                            variant="outline"
-                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
-                          >
-                            <a
-                              href="https://github.com/iamqitmeer/multiple-task-manager"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <Github className="mr-2 h-4 w-4" />
-                              Code
-                            </a>
-                          </Button>
-                          <Button
-                            asChild
-                            variant="outline"
-                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
-                          >
-                            <a
-                              href="https://multi-task-manager.vercel.app/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <ExternalLink className="mr-2 h-4 w-4" />
-                              Demo
-                            </a>
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                    <CardHeader>
-                      <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
-                        Todo List App
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-                        A Functional Multiple Task Manager that organizes tasks
-                        by days, allowing users to add and manage separate
-                        to-dos for each day of the week.
-                      </p>
-                      <p className="text-zinc-500 dark:text-zinc-400 text-sm">
-                        <span className="font-semibold">Tools used:</span>{" "}
-                        React.js, Tailwind CSS
-                      </p>
-                    </CardContent>
-                  </Card>
-                </motion.div>
+               
               </div>
             </div>
           </motion.section>
