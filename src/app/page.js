@@ -181,7 +181,7 @@ export default function Portfolio() {
                 Qitmeer Raza
               </motion.h2>
               <motion.p
-                className="text-2xl md:text-4xl text-zinc-700 dark:text-zinc-300 mb-12 font-light"
+                className="text-2xl font-semibold md:text-4xl text-zinc-700 dark:text-zinc-300 mx-4 mb-12 font-light"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
