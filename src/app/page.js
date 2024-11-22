@@ -208,13 +208,16 @@ export default function Portfolio() {
                 >
                   <a href="#contact">Get in Touch</a>
                 </Button>
+                <a href="https://drive.google.com/file/d/1drG2lbbzZrBuc9PLi1zBlAe92ARad_yw/view" target="blank">
+
                 <Button
                   variant="outline"
-                  className="text-lg px-8 mx-4 py-6 border-zinc-800 text-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 bg-transparent  dark:text-zinc-100 dark:hover:text-zinc-800 dark:hover:hover:bg-zinc-100 rounded-full transition-all duration-300"
+                  className="text-lg px-8 mx-4 py-6 border-zinc-800 text-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 bg-transparent dark:text-zinc-100 dark:hover:text-zinc-800 dark:hover:hover:bg-zinc-100 rounded-full transition-all duration-300"
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </Button>
+                 </a>
               </motion.div>
             </motion.div>
             <motion.div
@@ -526,7 +529,6 @@ export default function Portfolio() {
                     </CardContent>
                   </Card>
                 </motion.div>
-               
               </div>
             </div>
           </motion.section>
@@ -693,19 +695,22 @@ export default function Portfolio() {
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
-                href="#"
+                href="https://github.com/iamqitmeer/"
+                target="blank"
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
               >
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                target="blank"
+                href="https://linkedin.com/in/iamqitmeer/"
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=iamqitmeeer@gmail.com"
+                target="blank"
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
               >
                 <Mail className="h-6 w-6" />
