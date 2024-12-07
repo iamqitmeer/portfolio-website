@@ -208,16 +208,18 @@ export default function Portfolio() {
                 >
                   <a href="#contact">Get in Touch</a>
                 </Button>
-                <a href="https://drive.google.com/file/d/1drG2lbbzZrBuc9PLi1zBlAe92ARad_yw/view" target="blank">
-
-                <Button
-                  variant="outline"
-                  className="text-lg px-8 mx-4 py-6 border-zinc-800 text-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 bg-transparent dark:text-zinc-100 dark:hover:text-zinc-800 dark:hover:hover:bg-zinc-100 rounded-full transition-all duration-300"
+                <a
+                  href="https://drive.google.com/file/d/1drG2lbbzZrBuc9PLi1zBlAe92ARad_yw/view"
+                  target="blank"
                 >
-                  <Download className="mr-2 h-4 w-4" />
-                  Download Resume
-                </Button>
-                 </a>
+                  <Button
+                    variant="outline"
+                    className="text-lg px-8 mx-4 py-6 border-zinc-800 text-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 bg-transparent dark:text-zinc-100 dark:hover:text-zinc-800 dark:hover:hover:bg-zinc-100 rounded-full transition-all duration-300"
+                  >
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Resume
+                  </Button>
+                </a>
               </motion.div>
             </motion.div>
             <motion.div
@@ -357,7 +359,7 @@ export default function Portfolio() {
                           >
                             <a
                               href="https://github.com/iamqitmeer/finance-management"
-                              target="_blank"
+                              target="blank"
                               rel="noopener noreferrer"
                             >
                               <Github className="mr-2 h-4 w-4" />
@@ -371,7 +373,7 @@ export default function Portfolio() {
                           >
                             <a
                               href="https://finance-management-qitmeer.vercel.app"
-                              target="_blank"
+                              target="blank"
                               rel="noopener noreferrer"
                             >
                               <ExternalLink className="mr-2 h-4 w-4" />
@@ -422,7 +424,7 @@ export default function Portfolio() {
                           >
                             <a
                               href="https://github.com/iamqitmeer/SMIT-0002-WMA-Batch-11-2024-Training/tree/main/SMIT%20Projects/final_frontend_ecommerce"
-                              target="_blank"
+                              target="blank"
                               rel="noopener noreferrer"
                             >
                               <Github className="mr-2 h-4 w-4" />
@@ -436,7 +438,7 @@ export default function Portfolio() {
                           >
                             <a
                               href="https://ecommerce-react-two-alpha.vercel.app/"
-                              target="_blank"
+                              target="blank"
                               rel="noopener noreferrer"
                             >
                               <ExternalLink className="mr-2 h-4 w-4" />
@@ -487,7 +489,7 @@ export default function Portfolio() {
                           >
                             <a
                               href="https://github.com/iamqitmeer/multiple-task-manager"
-                              target="_blank"
+                              target="blank"
                               rel="noopener noreferrer"
                             >
                               <Github className="mr-2 h-4 w-4" />
@@ -501,7 +503,7 @@ export default function Portfolio() {
                           >
                             <a
                               href="https://multi-task-manager.vercel.app/"
-                              target="_blank"
+                              target="blank"
                               rel="noopener noreferrer"
                             >
                               <ExternalLink className="mr-2 h-4 w-4" />
@@ -525,6 +527,205 @@ export default function Portfolio() {
                       <p className="text-zinc-500 dark:text-zinc-400 text-sm">
                         <span className="font-semibold">Tools used:</span>{" "}
                         React.js, Tailwind CSS
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://i.ibb.co/4JpBFrQ/notix.png"
+                        alt="Notix Task Manager"
+                        width={300}
+                        height={200}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="space-x-4">
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://github.com/iamqitmeer/notix"
+                              target="blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Github className="mr-2 h-4 w-4" />
+                              Code
+                            </a>
+                          </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://notix.vercel.app"
+                              target="blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Demo
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
+                        Notix - Task Manager
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                        A productivity app for managing tasks with priority
+                        levels, due dates, and AI assistance for better
+                        efficiency.
+                      </p>
+                      <p className="text-zinc-500 dark:text-zinc-400 text-sm">
+                        <span className="font-semibold">Tools used:</span>{" "}
+                        React.js, Tailwind CSS, Gemini API
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://i.ibb.co/P4XvMG8/Capture.png"
+                        alt="Sumix Advanced Calculator"
+                        width={300}
+                        height={200}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="space-x-4">
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://github.com/iamqitmeer/sumix"
+                              target="blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Github className="mr-2 h-4 w-4" />
+                              Code
+                            </a>
+                          </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://sumix.vercel.app"
+                              target="blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Demo
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
+                        Sumix - Advanced Calculator
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                        A multi-functional app combining a scientific
+                        calculator, currency converter, and fitness tools in one
+                        place.
+                      </p>
+                      <p className="text-zinc-500 dark:text-zinc-400 text-sm">
+                        <span className="font-semibold">Tools used:</span>{" "}
+                        Next.js, ShadCN, Tailwind CSS
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="bg-zinc-50 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 overflow-hidden group hover:shadow-xl hover:shadow-zinc-300/20 dark:hover:shadow-zinc-600/20 transition-all duration-300">
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://i.ibb.co/vXBg7V1/blog.png"
+                        alt="CRUD Blog App"
+                        width={300}
+                        height={200}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-zinc-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="space-x-4">
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://github.com/iamqitmeer/SMIT-0002-WMA-Batch-11-2024-Training/tree/main/Learning-Phase/Full-Stack-Next.js/blog"
+                              target="blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Github className="mr-2 h-4 w-4" />
+                              Code
+                            </a>
+                          </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="dark:text-zinc-100 border-zinc-100 hover:bg-zinc-100 dark:border-none dark:hover:text-zinc-900 text-zinc-900"
+                          >
+                            <a
+                              href="https://crud-blog-app.vercel.app/"
+                              target="blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Demo
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-zinc-800 dark:text-zinc-100">
+                        CRUD Blog App
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                        A complete CRUD Blog App with features to add, edit,
+                        delete, and view blog posts. Each post includes a
+                        thumbnail, title, description, and author information.
+                      </p>
+                      <p className="text-zinc-500 dark:text-zinc-400 text-sm">
+                        <span className="font-semibold">Tools used:</span>{" "}
+                        Next.js, MongoDB, Mongoose, Tailwind CSS, Shadcn
                       </p>
                     </CardContent>
                   </Card>
